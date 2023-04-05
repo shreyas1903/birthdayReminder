@@ -1,10 +1,11 @@
 import React from "react";
 
-const list = ({ people }) => {
+function list({ people }) {
+  // here we have to pass the state as the state is being manipulated
   return (
-    <>
-      {people.map((person) => {
-        const { id, name, age, image } = person;
+    <article>
+      {people.map((hell) => {
+        const { id, name, age, image } = hell;
 
         return (
           <article key={id} className="person">
@@ -16,8 +17,8 @@ const list = ({ people }) => {
           </article>
         );
       })}
-    </>
+    </article>
   );
-};
+}
 
 export default list;

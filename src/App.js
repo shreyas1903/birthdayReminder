@@ -17,3 +17,9 @@ function App() {
 }
 
 export default App;
+
+// lesson learnt:
+// instead of const data we can also use export default and then just pass on the whole dataset
+// if we are using const list insted of function list and then we are passisng on the parameter then we must use the arrow funciton to avoid infinite re-renering of the funcitons
+// the parameter that we are passing can be any random name
+// but if we are passing a state as a prop then it hould be constant
