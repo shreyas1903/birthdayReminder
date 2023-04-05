@@ -10,6 +10,7 @@ function App() {
         <h3>{people.length} birthdays today</h3>
         <List people={people} />
         <button onClick={() => setpeople([])}>Clear all</button>
+        {/* think how to pass this as a function */}
       </section>
     </main>
   );
